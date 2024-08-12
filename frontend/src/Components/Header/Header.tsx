@@ -18,8 +18,8 @@ export function Header() {
         <>
             <header>
                 <nav className={"uppercase flex justify-between items-center px-2 py-1 sm:px-[35px] sm:py-4 font-bold"}>
-                    <div className={"flex justify-between items-center w-full md:w-auto sm:py-[18px] sm:px-5"}>
-                        <button className={"md:hidden"} onClick={toggleMenu}>
+                    <div className={"flex justify-between items-center w-full xl:w-auto sm:py-[18px] sm:px-5"}>
+                        <button className={"xl:hidden"} onClick={toggleMenu}>
                             {menuOpen ? <MdClose className={"w-8 h-8"}/> : <MdMenu className={"w-8 h-8"}/>}
                         </button>
                         <div className={"mx-auto"}>
@@ -27,7 +27,7 @@ export function Header() {
                                 <img src={"/src/assets/Header/img.png"} alt={"site logo"} className={"mx-auto"}/>
                             </Link>
                         </div>
-                        <ul className={"hidden md:flex items-start text-base px-5 ml-5"}>
+                        <ul className={"hidden xl:flex items-start text-base px-5 ml-5"}>
                             <li className={`${isActiveNavbar("/men") ? "text-black" : "text-[#979a9b]"} mx-2 my-4`}>
                                 <Link to={"/men"}>Men</Link>
                             </li>
@@ -52,17 +52,17 @@ export function Header() {
                         </ul>
                     </div>
                     <div className={"flex items-center"}>
-                        <ul className={"flex md:px-5 justify-around items-center"}>
-                            <li className={`${isActiveNavbar("/our-story") ? "text-black" : "text-[#979a9b]"} mx-2 hidden md:block`}>
+                        <ul className={"flex xl:px-5 justify-around items-center"}>
+                            <li className={`${isActiveNavbar("/our-story") ? "text-black" : "text-[#979a9b]"} mx-2 hidden xl:block`}>
                                 <Link to={"/our-story"}> Our Story</Link>
                             </li>
-                            <li className={`${isActiveNavbar("/contact") ? "text-black" : "text-[#979a9b]"} mx-2 hidden md:block`}>
+                            <li className={`${isActiveNavbar("/contact") ? "text-black" : "text-[#979a9b]"} mx-2 hidden xl:block`}>
                                 <Link to={"/contact"}>Contact</Link>
                             </li>
-                            <li className={"mx-2 md:ml-8"}>
+                            <li className={"mx-2 xl:ml-8"}>
                                 <MdShoppingCart className={"w-6 h-6"}/>
                             </li>
-                            <li className={`${isActiveNavbar("/account") ? "text-black" : "text-[#979a9b]"} md:mx-2 md:ml-8`}>
+                            <li className={`${isActiveNavbar("/account") ? "text-black" : "text-[#979a9b]"} xl:mx-2 xl:ml-8`}>
                                 <Link to={"/account"}><MdManageAccounts className={"w-7 h-7 text-black"}/></Link>
                             </li>
                         </ul>
