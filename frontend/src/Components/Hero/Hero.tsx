@@ -1,7 +1,7 @@
 export function Hero() {
     return (
         <>
-            <section className={"bg-hero bg-center bg-no-repeat bg-cover"}>
+            <section className={"bg-hero bg-fixed bg-center bg-no-repeat bg-cover"}>
                 <div className={"container mx-auto flex justify-start items-center xl:justify-start  xl:items-start p-8 md:py-16 md:px-16 xl:py-40 xl:px-40"}>
                     <div className={"xl:w-2/4"}>
                         <div className={"text-white"}>
