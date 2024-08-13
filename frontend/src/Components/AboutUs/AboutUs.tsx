@@ -2,7 +2,7 @@ export function AboutUs() {
     return (
         <>
             <section>
-                <div className={"container mx-auto md:px-16 xl:px-40 grid grid-cols-1 sm:grid-cols-2"}>
+                <div className={"container mx-auto md:px-16 xl:px-40 py-20 grid grid-cols-1 sm:grid-cols-2"}>
                     <div>
                         <img className={"w-full"} src={"/src/assets/AboutUs/img.png"} alt={"About us img"}/>
                     </div>
