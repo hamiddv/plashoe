@@ -11,7 +11,7 @@ class Category(models.Model):
 
     gender = models.CharField(_("gender"), max_length=6, choices=GENDER_CHOICES, default=GENDER_CHOICES[0][0])
     name = models.CharField(_("name"), max_length=100)
-    slug = models.SlugField(_("slug"), max_length=100, unique=True)
+    slug = models.SlugField(_("slug"), max_length=100, unique=True, auto_created=True)
     create_date = models.DateTimeField(_("create date"), auto_now_add=True)
     update_date = models.DateTimeField(_("update date"), auto_now=True)
 
