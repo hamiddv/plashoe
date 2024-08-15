@@ -28,11 +28,11 @@ export function Header() {
                             </Link>
                         </div>
                         <ul className={"hidden xl:flex items-start text-base px-5 ml-5"}>
-                            <li className={`${isActiveNavbar("/men") ? "text-black" : "text-[#979a9b]"} mx-2 my-4`}>
-                                <Link to={"/men"}>Men</Link>
+                            <li className={`${isActiveNavbar("/product/men") ? "text-black" : "text-[#979a9b]"} mx-2 my-4`}>
+                                <Link to={"/product/men"}>Men</Link>
                             </li>
-                            <li className={`${isActiveNavbar("/women") ? "text-black" : "text-[#979a9b]"} mx-2 my-4`}>
-                                <Link to={"/women"}>Women</Link>
+                            <li className={`${isActiveNavbar("/product/women") ? "text-black" : "text-[#979a9b]"} mx-2 my-4`}>
+                                <Link to={"/product/women"}>Women</Link>
                             </li>
                             <li className={`${isActiveNavbar("/collection") ? "text-black" : "text-[#979a9b]"} mx-2 my-4`}>
                                 <Link to={"/collection"}>Collection</Link>
@@ -83,14 +83,14 @@ export function Header() {
                         <li className={`${isActiveNavbar("/men") ? "text-black" : "text-[#979a9b]"} mx-2 my-4`}>
                             <Link to={"/men"} onClick={toggleMenu}>Men</Link>
                         </li>
-                        <li className={`${isActiveNavbar("/women") ? "text-black" : "text-[#979a9b]"} mx-2 my-4`}>
-                            <Link to={"/women"} onClick={toggleMenu}>Women</Link>
+                        <li className={`${isActiveNavbar("/product/women") ? "text-black" : "text-[#979a9b]"} mx-2 my-4`}>
+                            <Link to={"/product/women"} onClick={toggleMenu}>Women</Link>
                         </li>
                         <li className={`${isActiveNavbar("/collection") ? "text-black" : "text-[#979a9b]"} mx-2 my-4`}>
-                            <Link to={"/collection"} onClick={toggleMenu}>Collection</Link>
+                            <Link to={"/product/collection"} onClick={toggleMenu}>Collection</Link>
                         </li>
                         <li className={`${isActiveNavbar("/lookbook") ? "text-black" : "text-[#979a9b]"} mx-2 my-4`}>
-                            <Link to={"/lookbook"} onClick={toggleMenu}>Lookbook</Link>
+                            <Link to={"lookbook"} onClick={toggleMenu}>Lookbook</Link>
                         </li>
                         <li className={`${isActiveNavbar("/sale") ? "text-black" : "text-[#979a9b]"} mx-2 my-4`}>
                             <Link to={"/sale"} onClick={toggleMenu}>Sale</Link>

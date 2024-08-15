@@ -11,7 +11,7 @@ export function Home() {
             <Brands/>
             <AboutUs/>
             <HowShoesMade/>
-            <ProductList/>
+            <ProductList type={"home"}/>
         </>
     );
 }

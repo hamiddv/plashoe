@@ -54,12 +54,12 @@ export function Footer() {
                                     Shop
                                 </li>
                                 <li className={"mt-4 text-gray-600"}>
-                                    <Link to={"/men"}>
+                                    <Link to={"/product/men"}>
                                         Shop Men
                                     </Link>
                                 </li>
                                 <li className={"mt-4 text-gray-600"}>
-                                    <Link to={"/women"}>
+                                    <Link to={"/product/women"}>
                                         Shop Women
                                     </Link>
                                 </li>

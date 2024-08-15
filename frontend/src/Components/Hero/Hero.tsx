@@ -1,3 +1,5 @@
+import {Link} from "react-router-dom";
+
 export function Hero() {
     return (
         <>
@@ -15,12 +17,16 @@ export function Hero() {
                             </p>
                         </div>
                         <div className={"uppercase py-8"}>
-                            <button className={"bg-white py-2 px-4 mr-4 sm:mr-8 sm:px-9 sm:py-3 hover:bg-black hover:text-white duration-500"}>
-                                shop men
-                            </button>
-                            <button className={"bg-white py-2 px-4 mr-4 sm:mr-8 sm:px-9 sm:py-3 hover:bg-black hover:text-white duration-500"}>
-                                shop women
-                            </button>
+                            <Link to={"/product/men"}>
+                                <button className={"bg-white py-2 px-4 mr-4 sm:mr-8 sm:px-9 sm:py-3 hover:bg-black hover:text-white duration-500"}>
+                                    shop men
+                                </button>
+                            </Link>
+                            <Link to={"/product/women"}>
+                                <button className={"bg-white py-2 px-4 mr-4 sm:mr-8 sm:px-9 sm:py-3 hover:bg-black hover:text-white duration-500"}>
+                                    shop women
+                                </button>
+                            </Link>
                         </div>
                     </div>
                 </div>
