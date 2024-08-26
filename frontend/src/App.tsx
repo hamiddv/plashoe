@@ -10,7 +10,7 @@ function App() {
             <Header/>
             <Routes>
                 <Route path={"/"} element={<Home/>}/>
-                <Route path={"/product/:categoryName"} element={<Product/>}/>
+                <Route path={"/product/:gender"} element={<Product/>}/>
             </Routes>
             <Footer/>
         </Router>

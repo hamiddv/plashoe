@@ -13,5 +13,5 @@ class CategoryAdmin(admin.ModelAdmin):
 @admin.register(Shoe)
 class ShoeAdmin(admin.ModelAdmin):
     list_display = ("name",)
-    fields = ("gender", "name", "description", "stock", "free_shipping", "categories", "create_date", "update_date")
+    fields = ("gender", "name", "description", "image", "stock", "price", "free_shipping", "categories", "create_date", "update_date")
     readonly_fields = ["create_date", "update_date"]
